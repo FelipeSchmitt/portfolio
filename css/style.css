@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/background-home.jpg");
+    background-size: 200vh;
+    background-repeat: no-repeat;
+}
+section#content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+
+}
+#author_image{
+    text-align: center;
+    height: 100%;
+}
+#author_image img{
+    margin-top: 20vh;
+    height: 50vh;
+    border-radius: 50%;
+    border: solid white;
+}
+#author_image #title{
+    display: block;
+    margin: 10px auto 10px auto;
+    border: solid white;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding: 20px 0px 20px 0px;
+   font-size: 1.8em;
+   font-weight: 500;
+   background-color: rgba(0, 0, 0, 0.75);
+   width: 50%;
+   color: white;
+    font-family: Helvetica;
+}
+#button-options{
+    margin-top: 25vh;
+}
+#button-options button{
+    display: block;
+    color: white;
+    outline: none;
+    background-color: transparent;
+    border-color: white;
+    border-width: 3px;
+    border-radius: 2rem;
+    margin: 5vh auto 5vh auto;
+    font-size: 1.8em;
+    border-radius: 2rem;
+    width: 40vw;
+    height: 80px;
+}
+#button-options button:hover{
+    box-shadow: 0 0 5px white;
+    cursor: pointer;
+
+}
+@media screen and (max-width: 840px){
+    body{
+        overflow: scroll;
+        background-size: 200vh;
+    }
+    section#content{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: auto;
+    }
+    #author_image img{
+        margin-top: 5vh;
+        width: 80%;
+        height: auto;
+    }
+    #author_image #title{
+        width: 75%;
+        font-size: 1.6em;
+    }
+    #button-options{
+        margin-top: 5vh;
+    }
+    #button-options button{
+        width: 90%;
+        border-radius: 1rem;
+    }  
+}

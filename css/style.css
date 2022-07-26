@@ -62,7 +62,7 @@ section#content{
 @media screen and (max-width: 840px){
     body{
         overflow: scroll;
-        background-size: 200vh;
+        background-size: 250vh;
     }
     section#content{
         display: grid;
